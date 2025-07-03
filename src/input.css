@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-truculenta overflow-x-hidden;
+  }
+  .container {
+    @apply max-w-6xl w-full mx-auto px-4;
+  }
+}
+
+@layer components {
+  /* HEADER */
+  .header {
+    @apply shadow-lg py-5 bg-semilight w-full;
+  }
+  .header__wrapper {
+    @apply grid grid-cols-[1fr_1fr] gap-5 items-center justify-items-center;
+  }
+  .header__nav {
+    @apply flex;
+  }
+  .header__nav ul {
+    @apply flex flex-row;
+  }
+  .header__nav ul li a {
+    @apply px-4 text-base font-bold text-black uppercase hover:text-secondary;
+  }
+  /* HEADER END */
+  /* INSIDE STYLE BANNER */
+  .insideBanner {
+    @apply bg-secondary py-5 w-full items-center;
+  }
+  .insideBanner__text p {
+    @apply grid grid-cols-1 text-black text-xl font-bold;
+  }
+  /* INSIDE STYLE BANNER END*/
+  /* INTERIOR STYLE BANNER */
+  .interiorBanner {
+    @apply p-8;
+  }
+  .interiorBanner__wrapper {
+    @apply grid grid-cols-[1fr_1fr] w-full gap-10;
+  }
+  .interiorBanner__image__wrapper {
+    @apply flex gap-4;
+  }
+  .interiorBanner__image__wrapper img:nth-childe(2) {
+    @apply relative top-2;
+  }
+  /* INTERIOR STYLE BANNER END */
+  /* ABOUT STYLE BANNER */
+  .aboutBanner {
+    @apply bg-black/80;
+  }
+  .aboutBanner__wrapper {
+    @apply gap-10;
+  }
+  .aboutBanner__img__wrapper {
+    @apply flex flex-row gap-10 items-center;
+  }
+  .aboutBanner__details p {
+    @apply text-white;
+  }
+  .aboutBanner__details__wrapper h2 {
+    @apply text-4xl font-thin text-primary;
+  }
+  /* ABOUT STYLE BANNER END */
+  /* CATALOG CARDS BANNER */
+  .homeCatalog {
+    @apply bg-semilight py-10;
+  }
+  .homeCatalog__wrapper {
+    @apply flex flex-row gap-16 justify-center mt-4;
+  }
+  .homeCatalog__cards {
+    @apply bg-white w-[20rem] shadow-xl;
+  }
+  .homeCatalog__cards img {
+    @apply mb-2 w-full;
+  }
+  .homeCatalog__cards__details h4 {
+    @apply text-2xl text-secondary mb-2 font-bold;
+  }
+  .homeCatalog__cards__details p {
+    @apply mb-2;
+  }
+  /* CATALOG CARDS BANNER END */
+  /* DESIRE BANNER */
+  .desireBanner {
+    @apply bg-primary p-6 text-center;
+  }
+  .desireBanner__details p {
+    @apply mb-4;
+  }
+  /* DESIRE BANNER END */
+  /* FOOTER */
+  .footer {
+    @apply py-6 bg-gray-500 text-white;
+  }
+  .footer__contact {
+    @apply flex items-center justify-between;
+  }
+  .footer__social-media-list ul {
+    @apply flex flex-row gap-2;
+  }
+  .footer__office-address,
+  .footer__trademark {
+    @apply text-center;
+  }
+
+  .btn--primary {
+    @apply inline-block px-4 py-2 text-black bg-semilight border w-fit rounded-full transition duration-150 ease-in-out hover:text-primary hover:bg-white hover:border-primary;
+  }
+}
