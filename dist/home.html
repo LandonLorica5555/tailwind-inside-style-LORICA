@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
   </head>
   <body>
     <!-- header -->
@@ -21,14 +25,17 @@
           </a>
           <nav class="header__nav">
             <ul>
-              <li>
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Catalog</a>
-                <a href="#">Contacts</a>
-              </li>
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Catalog</a></li>
+              <li><a href="#">Contacts</a></li>
             </ul>
           </nav>
+          <div class="toggle__menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
@@ -67,8 +74,11 @@
             <a href="#" class="btn btn--primary">Learn more</a>
           </div>
           <div class="interiorBanner__image__wrapper">
-            <img src="../img/banner-1.png" alt="" />
-            <img src="../img/banner-2.png" alt="" />
+            <img src="../img/banner-1.png" alt="This is a theme of a salas" />
+            <img
+              src="../img/banner-2.png"
+              alt="This is another theme of a salas"
+            />
           </div>
         </div>
       </div>
@@ -79,9 +89,14 @@
       <div class="container">
         <div class="aboutBanner__wrapper">
           <div class="aboutBanner__img__wrapper">
-            <img src="../img/about-2.png" alt="" />
+            <img
+              src="../img/about-2.png"
+              alt="This is a picture of a corner flowers"
+            />
             <div class="aboutBanner__details__wrapper">
-              <h2>About Inside Style</h2>
+              <div class="aboutBanner__details__title">
+                <h2>About Inside Style</h2>
+              </div>
               <div class="aboutBanner__details">
                 <p class="mb-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -178,12 +193,71 @@
         </div>
       </div>
     </section>
+    
+    <!-- testimonials -->
+    <section class="testimonials py-10">
+      <div class="container">
+        <h2 class="text-2xl font-bold text-primary mb-5">CLIENTS REVIEW</h2>
+        <div class="testimonials__wrapper">
+          <div class="testimonials__slider">
+            <div class="testimonials__item">
+              <h4>Karina</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                nam placeat eius qui, quidem ducimus repudiandae velit molestiae
+                cupiditate sapiente?
+              </p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Ningning</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                nam placeat eius qui, quidem ducimus repudiandae velit molestiae
+                cupiditate sapiente?
+              </p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Giselle</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                nam placeat eius qui, quidem ducimus repudiandae velit molestiae
+                cupiditate sapiente?
+              </p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Winter</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                nam placeat eius qui, quidem ducimus repudiandae velit molestiae
+                cupiditate sapiente?
+              </p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Yeji</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                nam placeat eius qui, quidem ducimus repudiandae velit molestiae
+                cupiditate sapiente?
+              </p>
+            </div>
+            <div class="testimonials__item">
+              <h4>Ryujin</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+                nam placeat eius qui, quidem ducimus repudiandae velit molestiae
+                cupiditate sapiente?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- desire banner -->
     <section class="desireBanner">
       <div class="container">
         <div class="desireBanner__details">
-          <h3 class="text-3xl font-bold">
+          <h3 class="text-2xl md:text-3xl font-bold">
             Feel free to talk about your desired style
           </h3>
           <p>
@@ -233,5 +307,10 @@
         </div>
       </div>
     </footer>
+
+    <!-- slider script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/toggleMenu.js"></script>
   </body>
 </html>
