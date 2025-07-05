@@ -984,7 +984,7 @@ body{
 .aboutPageBanner__social-media-list ul{
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  gap: 1.25rem;
 }
 
 .aboutPageBanner__details p{
@@ -1183,26 +1183,14 @@ body{
     margin-bottom: 0.5rem;
   }
 
-  .md\:text-3xl{
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-
-  .md\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .md\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  @media (min-width: 1024px){
-    .md\:lg\:text-4xl{
-      font-size: 2.25rem;
-      line-height: 2.5rem;
-    }
+  .md\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 

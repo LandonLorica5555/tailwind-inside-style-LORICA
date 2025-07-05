@@ -172,7 +172,7 @@
     @apply text-center text-sm;
   }
   .aboutPageBanner__social-media-list ul {
-    @apply flex flex-row gap-2;
+    @apply flex flex-row gap-5;
   }
   .aboutPageBanner__details p {
     @apply text-justify;
