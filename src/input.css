@@ -8,7 +8,7 @@
     @apply font-truculenta overflow-x-hidden;
   }
   .container {
-    @apply max-w-6xl w-full mx-auto px-4;
+    @apply max-w-6xl w-full mx-auto p-8;
   }
 }
 
@@ -163,7 +163,8 @@
   .tns-autoplay {
     @apply hidden;
   }
-  /* ABOUT PAGE */
+  /* ABOUT HTML PAGE */
+  /* about page banner */
   .aboutPageBanner__wrapper {
     @apply flex flex-col lg:flex-row items-center;
   }
@@ -176,7 +177,14 @@
   .aboutPageBanner__details p {
     @apply text-justify;
   }
-
+  /* latest style cards */
+  .latestStyle {
+    @apply bg-black/85 text-white;
+  }
+  .latestStyle__cards__wrapper {
+    @apply flex flex-row flex-wrap md:flex-col items-center justify-center bg-white max-w-[18.125rem];
+  }
+  /* ABOUT HTML PAGE END */
   /* button */
   .btn--primary {
     @apply inline-block px-4 py-2 text-black bg-semilight border w-fit rounded-full transition duration-150 ease-in-out hover:text-primary hover:bg-white hover:border-primary;

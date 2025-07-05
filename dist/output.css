@@ -565,8 +565,7 @@ body{
   margin-left: auto;
   margin-right: auto;
   max-width: 72rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 2rem;
   width: 100%;
 }
 
@@ -958,7 +957,9 @@ body{
   max-width: 15rem;
 }
 
-/* ABOUT PAGE */
+/* ABOUT HTML PAGE */
+
+/* about page banner */
 
 .aboutPageBanner__wrapper{
   display: flex;
@@ -987,6 +988,33 @@ body{
 .aboutPageBanner__details p{
   text-align: justify;
 }
+
+/* latest style cards */
+
+.latestStyle{
+  background-color: rgb(0 0 0 / 0.85);
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.latestStyle__cards__wrapper{
+  display: flex;
+  max-width: 18.125rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 768px){
+  .latestStyle__cards__wrapper{
+    flex-direction: column;
+  }
+}
+
+/* ABOUT HTML PAGE END */
 
 /* button */
 
@@ -1020,6 +1048,10 @@ body{
   color: rgb(27 139 131 / var(--tw-text-opacity, 1));
 }
 
+.m-3{
+  margin: 0.75rem;
+}
+
 .my-4{
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1028,6 +1060,10 @@ body{
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .mb-4{
@@ -1068,8 +1104,16 @@ body{
   padding-bottom: 10rem;
 }
 
+.pb-4{
+  padding-bottom: 1rem;
+}
+
 .text-center{
   text-align: center;
+}
+
+.text-justify{
+  text-align: justify;
 }
 
 .text-2xl{
@@ -1108,6 +1152,11 @@ body{
   letter-spacing: 1rem;
 }
 
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .text-primary{
   --tw-text-opacity: 1;
   color: rgb(27 139 131 / var(--tw-text-opacity, 1));
@@ -1119,8 +1168,23 @@ body{
 }
 
 @media (min-width: 768px){
+  .md\:mb-2{
+    margin-bottom: 0.5rem;
+  }
+
   .md\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:mx-4{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .lg\:mb-1{
+    margin-bottom: 0.25rem;
   }
 }
