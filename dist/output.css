@@ -962,14 +962,15 @@ body{
 /* about page banner */
 
 .aboutPageBanner__wrapper{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
+  justify-items: center;
 }
 
-@media (min-width: 1024px){
+@media (min-width: 768px){
   .aboutPageBanner__wrapper{
-    flex-direction: row;
+    grid-template-columns: 1fr 2fr;
   }
 }
 
@@ -998,20 +999,29 @@ body{
 }
 
 .latestStyle__cards__wrapper{
-  display: flex;
-  max-width: 18.125rem;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
-  justify-content: center;
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  justify-items: center;
+  gap: 2.5rem;
 }
 
 @media (min-width: 768px){
   .latestStyle__cards__wrapper{
-    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
   }
+}
+
+@media (min-width: 1024px){
+  .latestStyle__cards__wrapper{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.latestStyle__cards{
+  width: 18.125rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 /* ABOUT HTML PAGE END */

@@ -166,7 +166,7 @@
   /* ABOUT HTML PAGE */
   /* about page banner */
   .aboutPageBanner__wrapper {
-    @apply flex flex-col lg:flex-row items-center;
+    @apply grid grid-cols-[1fr] md:grid-cols-[1fr_2fr] justify-items-center items-center;
   }
   .aboutPageBanner__img__wrapper p {
     @apply text-center text-sm;
@@ -182,7 +182,10 @@
     @apply bg-black/85 text-white;
   }
   .latestStyle__cards__wrapper {
-    @apply flex flex-row flex-wrap md:flex-col items-center justify-center bg-white max-w-[18.125rem];
+    @apply grid grid-cols-[1fr] md:grid-cols-[1fr_1fr] lg:grid-cols-[1fr_1fr_1fr] gap-10 items-center justify-items-center;
+  }
+  .latestStyle__cards {
+    @apply  bg-white w-[18.125rem];
   }
   /* ABOUT HTML PAGE END */
   /* button */
