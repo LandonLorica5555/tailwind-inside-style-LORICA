@@ -166,7 +166,7 @@
   /* ABOUT HTML PAGE */
   /* about page banner */
   .aboutPageBanner__wrapper {
-    @apply grid grid-cols-[1fr] md:grid-cols-[1fr_2fr] justify-items-center items-center;
+    @apply grid grid-cols-[1fr] gap-5 md:grid-cols-[1fr_2fr] justify-items-center items-center;
   }
   .aboutPageBanner__img__wrapper p {
     @apply text-center text-sm;

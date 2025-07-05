@@ -966,6 +966,7 @@ body{
   grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
+  gap: 1.25rem;
 }
 
 @media (min-width: 768px){
@@ -1186,6 +1187,23 @@ body{
     font-size: 1.875rem;
     line-height: 2.25rem;
   }
+
+  .md\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  @media (min-width: 1024px){
+    .md\:lg\:text-4xl{
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+    }
+  }
 }
 
 @media (min-width: 1024px){
@@ -1196,5 +1214,10 @@ body{
 
   .lg\:mb-1{
     margin-bottom: 0.25rem;
+  }
+
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
